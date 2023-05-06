@@ -1,0 +1,148 @@
+/* *{  
+    margin: 0;      
+    padding: 0; 
+    box-sizing: border-box;
+}      */
+   
+/* html{   
+    font-size: 62.5%;
+}  */
+    
+
+/* body{   
+    font-family: 'Montserrat', sans-serif;  
+    background-color: #ffe5d9;
+    font-size: 20px;
+} */
+
+    .Titulos{   
+        text-align: center; 
+        text-decoration: underline; 
+        margin-top: 20px   ;        
+        margin-bottom: 20px;
+    }
+
+.lanzamientos img{
+    width: 150px;
+    height: 225px;
+}    
+
+.lanzamientos{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+    footer{ 
+        width: 100%;    
+        height: 50px;
+        background-color: #908acb;  
+        align-items: center;    
+        position: relative; 
+        margin-bottom: 0px;    
+        min-height: 0px;
+    }   
+    
+    .redes-sociales{        
+        color: white;   
+        padding: 10px;  
+        
+    }
+    .iconos{   
+        font-size: 25px;
+        color: white;   
+        padding: 10px;
+    }
+
+    .pie{    
+        display: flex;  
+        justify-content: space-between;
+    }
+
+    a{  
+        text-decoration: none;
+        color: white;
+    }
+    .compra {   
+        text-align: center; 
+        background-color: blue;
+    }       
+    .p-compra{  
+        width: 100px;    
+        height: 50px
+    }   
+    
+    .tabla{     
+    
+        background-color: blue; 
+        color: white;   
+        text-align: center; 
+        margin-top: 25px;   
+        margin-bottom: 80px;
+    }
+    .banner{        
+        background-image: url(../multimedia/banner.jpeg);   
+        background-position: center center; 
+        background-repeat: no-repeat;   
+        background-size: cover; 
+        padding: 150px;
+    } 
+
+    .nuestra-historia{
+      background-color: #908acb  ;
+      padding: 15px 0;
+      
+    }
+    .historia{
+        width: 600px;
+    }
+    .imagentexto{
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+    }
+    .imagentexto p{
+        margin: 30px;
+    }  
+
+    /* Tamaño celular */
+    
+    @media screen and (max-width:500px ) {
+        .lanzamientos{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+         .logo{
+            display: none;
+         }
+        body{
+            background-color: #908acb;
+            
+        } 
+        .redes-sociales{
+            display: none;
+        }  
+        .banner{
+            display: none;
+        }  
+        .tabla{
+            font-size: 60%;
+        }
+      .imagentexto{
+        display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .historia{
+            height: 450px;
+            width: 400px;
+        }
+       
+    }
+
+    
+
+  
