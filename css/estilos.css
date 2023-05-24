@@ -7,29 +7,23 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: colorfondoprincipal;
+  background-color: #ffe5d9;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-.Titulos {
+.titulos {
   text-align: center;
   text-decoration: underline;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.lanzamientos {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-}
-.lanzamientos img {
-  width: 150px;
-  height: 225px;
 }
 
 footer {
@@ -39,6 +33,7 @@ footer {
   align-items: center;
   position: relative;
   margin-bottom: 0px;
+  margin-top: 20px;
   min-height: 0px;
 }
 
@@ -63,22 +58,64 @@ a {
   color: white;
 }
 
-.compra {
-  text-align: center;
-  background-color: blue;
+.contenedor-compra {
+  max: width 1200px;
+  margin: auto;
 }
 
-.p-compra {
-  width: 100px;
-  height: 50px;
+.compra-comprar {
+  background-color: #908acb;
+  padding: 50px 0;
 }
 
-.tabla {
-  background-color: blue;
+.comprar-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comprar-lista {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.comprar-lista h4 {
+  font-size: 20px;
   color: white;
+  margin-bottom: 25px;
+  font-weight: 300;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.comprar-lista ul li {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: auto;
+}
+
+.contenedor__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.contenedor___imagenes {
+  background-color: #908acb;
+  padding: 1rem;
+}
+
+.nota {
   text-align: center;
-  margin-top: 25px;
-  margin-bottom: 80px;
 }
 
 .banner {
@@ -108,14 +145,25 @@ a {
   margin: 30px;
 }
 
-/* Tamaño celular */
-@media screen and (max-width: 500px) {
-  .lanzamientos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Tamaño tablet */
+@media screen and (max-width: 800px) {
+  .contenedor__grid {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
+  .comprar-row {
+    text-align: center;
+  }
+  .comprar-lista {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .banner {
+    display: none;
+  }
+}
+/* Tamaño celular */
+@media screen and (max-width: 480px) {
   .logo {
     display: none;
   }
@@ -140,6 +188,17 @@ a {
   .historia {
     height: 450px;
     width: 400px;
+  }
+  .contenedor__grid {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .comprar-row {
+    text-align: center;
+  }
+  .comprar-lista {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 

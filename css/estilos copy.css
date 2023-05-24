@@ -15,14 +15,14 @@
     font-size: 20px;
 } */
 
-    .Titulos{   
+    /* .Titulos{   
         text-align: center; 
         text-decoration: underline; 
         margin-top: 20px   ;        
         margin-bottom: 20px;
-    }
+    } */
 
-.lanzamientos img{
+/* .lanzamientos img{
     width: 150px;
     height: 225px;
 }    
@@ -31,9 +31,9 @@
     display: flex;
     justify-content: space-around;
     align-content: center;
-}
+} */
 
-    footer{ 
+    /* footer{ 
         width: 100%;    
         height: 50px;
         background-color: #908acb;  
@@ -41,7 +41,7 @@
         position: relative; 
         margin-bottom: 0px;    
         min-height: 0px;
-    }   
+    }    */
     
     .redes-sociales{        
         color: white;   
@@ -97,7 +97,7 @@
         width: 600px;
     }
     .imagentexto{
-        display: flex;
+        display: block;
         flex-direction: row;
         padding: 30px;
     }
